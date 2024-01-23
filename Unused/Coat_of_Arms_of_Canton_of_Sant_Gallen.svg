@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="840px" height="1060px" version="1.1"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<rect id="lateral-fasce" fill="#ffffff" stroke="#000000" stroke-width="3"
+				width="25" height="400" x="230.5" y="130.5" ry="12.5" rx="12.5" />
+		<rect id="ribbon-horizontal" fill="#008000" stroke="#000000" stroke-width="3" 
+				width="148" height="32" x="226" y="166.5" rx="5" ry="5" />	
+		<path id="ribbon-diagonal" fill="#008000" stroke="#000000" stroke-width="3"
+				d="M 226,218 L 226,268 L 374,445 L 374,395 z" 
+				style="stroke-linejoin:round" />
+	</defs>
+	<g id="coat">
+		<g id="background">
+			<path id="bottom" fill="#008000" d="M0,0v640a420,420 0 0,0 840,0v-640z"/>
+		</g>
+		<g id="foreground" transform="translate(-105 0) scale(1.75 1.75)">
+			<rect id="main stick" fill="#ffffff" stroke="#000000" stroke-width="3" 
+					width="25" height="557" x="287.5" y="21.5" />
+			<rect id="main fasce" fill="#ffffff" stroke="#000000" stroke-width="3"
+					width="35" height="400" x="282.5" y="130.5" ry="12.5" rx="12.5" />
+			<use xlink:href="#lateral-fasce" />
+			<use xlink:href="#lateral-fasce" transform="translate(26,0)" />
+			<use xlink:href="#lateral-fasce" transform="translate(88,0)" />
+			<use xlink:href="#lateral-fasce" transform="translate(114,0)" />
+			<use xlink:href="#ribbon-horizontal" />
+			<use xlink:href="#ribbon-horizontal" transform="translate(0, 300)" />
+			<use xlink:href="#ribbon-diagonal" transform="scale(-1 1) translate(-600, 0)" />	
+			<use xlink:href="#ribbon-diagonal" />
+			<path id="axe-1" fill="#fff" stroke="#000000" stroke-width="3"
+					d="M 326,86 C 333,85 333,77 326,75 C 286,67 257,47 230,16 C 212,56 212,90 230,126 C 255,102 286,89 326,86 z "
+					/>
+			<path id="axe-2" fill="#fff" stroke="#000000" stroke-width="3"
+					d="M 317,70 L 317,90 C 305,93 295,96 283,95 L 283,59 C 295,60 305,66 317,70 z "
+					/>
+		</g>
+	</g>
+</svg>
